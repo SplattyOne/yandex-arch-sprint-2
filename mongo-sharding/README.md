@@ -1,28 +1,23 @@
 # pymongo-api
 
-## Архитектура проекта
-
-Находится в папке docs:
-[task1.drawio](https://github.com/SplattyOne/yandex-arch-sprint-2/blob/sharding/docs/task1.drawio)
-
 ## Как запустить
 
 Запускаем mongodb и приложение
 
 ```shell
-docker compose -f sharding-repl-cache/compose.yaml up -d
+docker compose -f mongo-sharding/compose.yaml up -d
 ```
 
 Настраиваем шардирование mongodb
 
 ```shell
-./sharding-repl-cache/scripts/mongo-sharding-init.sh
+./mongo-sharding/scripts/mongo-sharding-init.sh
 ```
 
 Заполняем mongodb данными
 
 ```shell
-./sharding-repl-cache/scripts/mongo-testdata-init.sh
+./mongo-sharding/scripts/mongo-testdata-init.sh
 ```
 
 ## Как проверить
@@ -30,7 +25,7 @@ docker compose -f sharding-repl-cache/compose.yaml up -d
 Наполнение данными по шардам
 
 ```shell
-./sharding-repl-cache/scripts/mongo-test.sh
+./mongo-sharding/scripts/mongo-test.sh
 ```
 
 ### Если вы запускаете проект на локальной машине

@@ -1,10 +1,5 @@
 # pymongo-api
 
-## Архитектура проекта
-
-Находится в папке docs:
-[task1.drawio](https://github.com/SplattyOne/yandex-arch-sprint-2/blob/sharding/docs/task1.drawio)
-
 ## Как запустить
 
 Запускаем mongodb и приложение
